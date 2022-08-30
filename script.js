@@ -3,6 +3,16 @@ let computerSelection;
 let computerScore = 0;
 let playerScore = 0;
 
+const rockBtn = document.getElementById('rock');
+const paperBtn = document.getElementById('paper');
+const scissorsBtn = document.getElementById('scissors');
+const playerChoice = document.getElementById('user');
+const computerChoice = document.getElementById('computer');
+const roundOutcome = document.getElementById('outcome');
+const currentScore = document.getElementById('currentScore');
+const gameOutcome = document.getElementById('gameOutcome');
+const restart = document.getElementById('restart');
+const overlay = document.getElementById('overlay');
 
 /* Computer makes a random choice */
 

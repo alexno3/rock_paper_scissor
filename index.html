@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f5ed9082ee.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/paw.png">
+    <title>Rock, Paper, Scissors</title>
 </head>
+
 <body>
-    <script src="script.js"></script>
-    
+    <div class="content">
+
+        <h1>Let's play Rock, Paper, Scissors!</h1>
+        <p>Win the game to save the humanity from a CAT-astrophe - it's MEOW or NEVER!</p>
+
+        <div class="scoreboard">
+
+            <div class="profile">
+                <img src="./images/catface.png" alt="cat face emoji" class="avatar">
+                <p>Cat</p>
+            </div>
+
+            <div class="score">
+                <p id="currentScore">0 : 0</p>
+                <p id="outcome">First to score 5 points wins the game!</p>
+            </div>
+
+            <div class="profile">
+                <img src="./images/computer.png" alt="computer emoji" class="avatar">
+                <p>Computer</p>
+            </div>
+        </div>
+
+        <div class="selection">
+            <div id="user"></div>
+            <div id="computer"></div>
+        </div>
+
+        <p>Choose your PURR-fect weapon!</p>
+
+        <div class="buttons">
+            <button type="button" id="rock" class="choice">
+                <img src="./images/rock-1.png" alt="cat paw illustration of rock">
+                <p>rock</p>
+            </button>
+            <button type="button" id="paper" class="choice">
+                <img src="./images/paper-1.png" alt="cat paw illustration of paper">
+                <p>paper</p>
+            </button>
+            <button type="button" id="scissors" class="choice">
+                <img src="./images/scissors-1.png" alt="cat paw illustration of scissors">
+                <p>scissors</p>
+            </button>
+        </div>
+
+        <a href="https://github.com/yuliana-r/rock-paper-scissors" target="_blank"><i
+                class="fab fa-github"></i>Github</a>
+    </div>
+
+    <div id="overlay">
+        <div id="modal">
+            <p id="gameOutcome"></p>
+            <button id="restart">Play again</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>
