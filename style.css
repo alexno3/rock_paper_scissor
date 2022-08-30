@@ -52,9 +52,10 @@ h1,
 
 .selection>div {
     align-items: center;
-    height: 11em;
+    height: 12em;
     width: 11em;
-    background-color: #fef8f5;
+    background-color:  #e9d1c2;
+    border-radius: 7em;
     border-style: none;
 }
 
@@ -85,7 +86,7 @@ h1,
 .scoreboard {
     display: flex;
     justify-content: space-around;
-    gap: 5em;
+    gap: 5sem;
     text-align: center;
     align-items: center;
 }
@@ -115,7 +116,7 @@ h1,
     height: 12em;
     width: 12em;
     background-color: #e9d1c2;
-    border-radius: 2em;
+    border-radius: 7em;
     border: 0.5px solid #bcab99;
 }
 
