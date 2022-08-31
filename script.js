@@ -83,10 +83,10 @@ function handleChoice(playerSelection) {
 function updateChoice(playerSelection, computerSelection) {
     switch (playerSelection) {
         case 'rock':
-            playerChoice.innerHTML = "<img src='./images/rock.png'>";
+            playerChoice.innerHTML = "<img src='./images/fist.png'>";
             break;
         case 'paper':
-            playerChoice.innerHTML = "<img src='./images/paper.png'>";
+            playerChoice.innerHTML = "<img src='./images/open-hands.png'>";
             break;
         case 'scissors':
             playerChoice.innerHTML = "<img src='./images/scissors.png'>";
@@ -95,10 +95,10 @@ function updateChoice(playerSelection, computerSelection) {
 
     switch (computerSelection) {
         case 'rock':
-            computerChoice.innerHTML = "<img src='./images/rock.png'>";
+            computerChoice.innerHTML = "<img src='./images/fist.png'>";
             break;
         case 'paper':
-            computerChoice.innerHTML = "<img src='./images/paper.png'>";
+            computerChoice.innerHTML = "<img src='./images/open-hands.png'>";
             break;
         case 'scissors':
             computerChoice.innerHTML = "<img src='./images/scissors.png'>";
@@ -114,9 +114,9 @@ function isGameOver() {
     if (playerScore === 5 || computerScore === 5) {
         overlay.style.display = "block";
         if (playerScore > computerScore) {
-            gameOutcome.textContent = "PAW-some - you won the game!";
+            gameOutcome.textContent = "You won the game!";
         } else {
-            gameOutcome.textContent = "CLAW-ful - you lost the game!"
+            gameOutcome.textContent = "You lost the game!"
         }
 
     }
